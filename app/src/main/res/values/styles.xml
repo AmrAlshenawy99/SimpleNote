@@ -1,0 +1,22 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="noteActivityStyle" parent="Theme.AppCompat.Light.NoActionBar">
+
+    </style>
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#13EABA</item>
+        <item name="colorPrimaryDark">#13EABA</item>
+        <item name="colorAccent">#204969</item>
+    </style>
+    <style name="progress">
+
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">#13EABA</item>
+        <item name="colorPrimaryDark">#13EABA</item>
+        <item name="colorAccent">#13EABA</item>
+    </style>
+
+</resources>

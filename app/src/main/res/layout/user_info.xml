@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="5"
+    tools:context="com.amr.simplenote.UserInfo"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="0dp"
+    android:orientation="vertical"
+    android:background="@drawable/border_black"
+    android:layout_weight="1.7"
+    android:layout_margin="7dp"
+    android:gravity="center"
+    android:weightSum="4"
+    >
+        <ImageView
+            android:id="@+id/userImg"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_margin="5dp"
+            android:layout_weight="2.5"
+            android:padding="3dp"
+            android:onClick="userImg"
+            android:src="@drawable/person" />
+        <EditText
+            android:id="@+id/txtUserName"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:layout_weight="1"
+            android:drawableLeft="@drawable/user_icon"
+            android:drawablePadding="7dp"
+            android:text="AMR"
+            android:gravity="center"
+            android:textColor="#204969"
+            android:textSize="20dp"
+            android:textStyle="bold"
+
+            />
+
+
+
+</LinearLayout>
+
+        <ImageView
+            android:id="@+id/btnSignUp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.1"
+            android:background="@drawable/signbtn"
+            android:src="@drawable/ok_icon"
+            android:fontFamily="monospace"
+            android:layout_margin="7dp"
+            android:text="log in"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:onClick="saveUserData"
+
+            />
+</LinearLayout>

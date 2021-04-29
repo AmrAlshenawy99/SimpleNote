@@ -1,0 +1,164 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/bgg"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:weightSum="3"
+    tools:context="com.amr.simplenote.LogInAct">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="2"
+
+        android:gravity="center"
+        android:orientation="vertical"
+        android:weightSum="3"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:orientation="vertical"
+            android:weightSum="3"
+
+            >
+            <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/gray">
+                <EditText
+                    android:id="@+id/txtEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp"
+                    android:layout_margin="10dp"
+                    android:background="@drawable/user_ip"
+                    android:drawableLeft="@drawable/person_icon"
+                    android:drawablePadding="10dp"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress"
+                    android:padding="10dp"
+                    android:textAlignment="textStart"
+                    android:textColor="#fff"
+                    android:textColorHint="#C9C9C9"
+
+                    />
+            </com.google.android.material.textfield.TextInputLayout>
+                        <com.google.android.material.textfield.TextInputLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textColorHint="@color/gray">
+                            <EditText
+                                android:id="@+id/txtPassword"
+                                android:layout_width="match_parent"
+                                android:layout_height="45dp"
+                                android:layout_margin="10dp"
+                                android:background="@drawable/user_ip"
+                                android:drawableLeft="@drawable/pass_icon"
+                                android:drawablePadding="10dp"
+                                android:hint="Password"
+                                android:inputType="textPassword"
+                                android:padding="10dp"
+                                android:textAlignment="textStart"
+                                android:textColor="#fff"
+                                android:textColorHint="#C9C9C9"
+
+                                />
+
+                        </com.google.android.material.textfield.TextInputLayout>
+
+
+
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="10dp"
+                android:gravity="center"
+                android:orientation="horizontal"
+                android:weightSum="3"
+
+                >
+
+
+                <ImageView
+                android:id="@+id/btnLogIn"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:layout_weight="2.8"
+                android:background="@drawable/signbtn"
+                android:src="@drawable/ok_icon"
+                android:fontFamily="monospace"
+                android:text="log in"
+                android:onClick="btnLogIn"
+                android:textColor="#fff"
+                android:textSize="20dp"
+
+                />
+
+
+            </LinearLayout>
+
+            <CheckBox
+                android:id="@+id/checkRemember"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp"
+
+                android:gravity="center"
+
+                android:text="remember me?"
+
+                />
+
+
+            <ProgressBar
+                android:id="@+id/progressBar"
+                style="@style/progress"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:visibility="invisible" />
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_gravity="bottom"
+        android:layout_weight="1"
+        android:gravity="bottom"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/btnNewUser"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginBottom="20dp"
+            android:drawableLeft="@drawable/user_icon"
+            android:drawablePadding="7dp"
+            android:text="new user sign up"
+            android:textColor="#204969"
+            android:textSize="20dp"
+            android:onClick="btnNewUser"
+            android:textStyle="bold"
+
+            />
+
+
+    </LinearLayout>
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="2dp"
+        android:background="#204969" />
+
+</LinearLayout>
